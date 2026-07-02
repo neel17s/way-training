@@ -31,6 +31,29 @@ export default function Dashboard() {
         </div>
       </section>
 
+      {/* Welcome Video */}
+      <section className="mb-16">
+        <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden">
+          <div className="p-6 sm:p-8">
+            <h2 className="text-xl font-bold text-gray-900 mb-2">
+              Welcome <span className="italic text-green-800">Video</span>
+            </h2>
+            <p className="text-sm text-gray-500">
+              A quick introduction to Way Education's mission and how you can help students on their study abroad journey.
+            </p>
+          </div>
+          <div className="relative aspect-video max-w-3xl mx-auto mb-6 px-6 sm:px-8">
+            <iframe
+              src="https://app.heygen.com/embeds/cc732886c7c24bf69abc1e3e5c6ff0c1"
+              title="Way Education Welcome Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="absolute inset-0 w-full h-full rounded-xl"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Stats */}
       <section className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-16">
         {[
